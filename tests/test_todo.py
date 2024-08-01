@@ -1,7 +1,6 @@
 import pytest
 from utils.helpers import get, post
 
-
 def test_get_user_todos():
     response = get("/users/6940144/todos")
     assert response.status_code == 200
